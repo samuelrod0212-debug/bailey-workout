@@ -1,17 +1,18 @@
 {
   "expo": {
-    "name": "core-workout",
+    "name": "Core",
     "slug": "core-workout",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.baileymorgan.coreworkout"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#C6F432",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,7 +20,20 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "Core",
+      "shortName": "Core",
+      "backgroundColor": "#07080A",
+      "themeColor": "#07080A"
+    },
+    "backgroundColor": "#07080A",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07080A"
+    },
+    "experiments": {
+      "baseUrl": "/bailey-workout"
     }
   }
 }

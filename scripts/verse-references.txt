@@ -1,0 +1,433 @@
+# One reference per line. The build script pulls the World English Bible (public domain) text for each.
+# Themes: strength, perseverance, discipline, rest, encouragement.
+Isaiah 40:31
+Philippians 4:13
+Joshua 1:9
+Isaiah 41:10
+2 Timothy 1:7
+1 Corinthians 9:24
+1 Corinthians 9:25
+1 Corinthians 9:26
+1 Corinthians 9:27
+Hebrews 12:1-2
+Hebrews 12:11
+Galatians 6:9
+James 1:2
+James 1:3
+James 1:4
+James 1:12
+Romans 5:3
+Romans 5:4
+Romans 5:5
+Romans 8:28
+Romans 8:31
+Romans 8:37
+Romans 12:1
+Romans 12:2
+Romans 12:12
+Romans 15:13
+Psalms 18:32
+Psalms 18:33
+Psalms 18:34
+Psalms 18:39
+Psalms 27:1
+Psalms 27:14
+Psalms 28:7
+Psalms 29:11
+Psalms 31:24
+Psalms 46:1
+Psalms 46:10
+Psalms 55:22
+Psalms 59:16
+Psalms 59:17
+Psalms 62:1
+Psalms 62:2
+Psalms 62:5
+Psalms 62:6
+Psalms 73:26
+Psalms 84:5
+Psalms 84:7
+Psalms 91:1
+Psalms 91:2
+Psalms 118:14
+Psalms 118:24
+Psalms 119:105
+Psalms 121:1
+Psalms 121:2
+Psalms 121:3
+Psalms 127:2
+Psalms 138:3
+Psalms 139:14
+Psalms 143:8
+Psalms 144:1
+Psalms 4:8
+Psalms 16:8
+Psalms 16:11
+Psalms 23:1
+Psalms 23:2
+Psalms 23:3
+Psalms 23:4
+Psalms 30:5
+Psalms 34:4
+Psalms 34:18
+Psalms 37:4
+Psalms 37:5
+Psalms 37:7
+Psalms 37:23
+Psalms 37:24
+Psalms 40:1
+Psalms 40:2
+Psalms 42:11
+Psalms 56:3
+Psalms 63:1
+Psalms 68:35
+Psalms 71:5
+Psalms 86:15
+Psalms 90:12
+Psalms 90:17
+Psalms 94:18
+Psalms 94:19
+Psalms 103:2
+Psalms 103:5
+Psalms 105:4
+Psalms 116:7
+Psalms 119:28
+Psalms 119:50
+Psalms 119:114
+Psalms 130:5
+Psalms 147:3
+Psalms 3:3
+Psalms 5:3
+Psalms 9:9
+Psalms 9:10
+Psalms 19:14
+Psalms 20:7
+Psalms 22:19
+Psalms 25:4
+Psalms 25:5
+Psalms 32:8
+Psalms 33:20
+Psalms 36:9
+Psalms 46:5
+Psalms 61:2
+Psalms 65:11
+Psalms 81:1
+Psalms 89:21
+Psalms 92:12
+Psalms 92:13
+Psalms 100:4
+Psalms 107:9
+Psalms 112:7
+Psalms 113:3
+Psalms 145:14
+Psalms 145:18
+Psalms 149:4
+Isaiah 12:2
+Isaiah 26:3
+Isaiah 26:4
+Isaiah 30:21
+Isaiah 33:2
+Isaiah 35:3
+Isaiah 35:4
+Isaiah 40:28
+Isaiah 40:29
+Isaiah 40:30
+Isaiah 41:13
+Isaiah 43:1
+Isaiah 43:2
+Isaiah 43:18
+Isaiah 43:19
+Isaiah 45:2
+Isaiah 46:4
+Isaiah 50:7
+Isaiah 54:10
+Isaiah 55:8
+Isaiah 55:9
+Isaiah 58:11
+Isaiah 60:1
+Isaiah 61:3
+Isaiah 64:8
+Jeremiah 17:7
+Jeremiah 17:8
+Jeremiah 29:11
+Jeremiah 29:12
+Jeremiah 29:13
+Jeremiah 31:3
+Jeremiah 31:25
+Jeremiah 32:17
+Jeremiah 33:3
+Lamentations 3:22
+Lamentations 3:23
+Lamentations 3:24
+Lamentations 3:25
+Lamentations 3:26
+Deuteronomy 31:6
+Deuteronomy 31:8
+Deuteronomy 33:25
+Deuteronomy 33:27
+Deuteronomy 20:4
+Joshua 1:7
+Joshua 1:8
+Joshua 23:10
+1 Chronicles 16:11
+1 Chronicles 28:20
+2 Chronicles 15:7
+2 Chronicles 16:9
+2 Chronicles 32:7
+2 Chronicles 20:15
+Nehemiah 8:10
+Exodus 14:14
+Exodus 15:2
+Exodus 33:14
+Exodus 23:12
+Exodus 34:21
+Genesis 2:2
+Genesis 2:3
+Genesis 28:15
+Numbers 6:24
+Numbers 6:25
+Numbers 6:26
+1 Samuel 12:24
+1 Samuel 16:7
+1 Samuel 30:6
+2 Samuel 22:2
+2 Samuel 22:3
+2 Samuel 22:30
+2 Samuel 22:33
+2 Samuel 22:34
+2 Samuel 22:35
+2 Samuel 22:40
+Habakkuk 3:19
+Zephaniah 3:17
+Zechariah 4:6
+Micah 7:7
+Micah 7:8
+Nahum 1:7
+Joel 2:25
+Joel 3:10
+Daniel 10:19
+Job 17:9
+Job 23:10
+Job 8:21
+Job 11:18
+Ruth 2:12
+Ecclesiastes 3:11
+Ecclesiastes 4:9
+Ecclesiastes 4:10
+Ecclesiastes 9:10
+Ecclesiastes 9:11
+Ecclesiastes 7:8
+Ecclesiastes 11:4
+Proverbs 3:5
+Proverbs 3:6
+Proverbs 3:7
+Proverbs 3:8
+Proverbs 3:24
+Proverbs 4:23
+Proverbs 4:25
+Proverbs 4:26
+Proverbs 10:4
+Proverbs 12:1
+Proverbs 12:24
+Proverbs 12:25
+Proverbs 13:4
+Proverbs 13:12
+Proverbs 14:23
+Proverbs 14:30
+Proverbs 16:3
+Proverbs 16:9
+Proverbs 16:24
+Proverbs 16:32
+Proverbs 17:22
+Proverbs 18:10
+Proverbs 19:21
+Proverbs 21:5
+Proverbs 21:31
+Proverbs 22:29
+Proverbs 24:5
+Proverbs 24:10
+Proverbs 24:16
+Proverbs 25:28
+Proverbs 27:17
+Proverbs 31:17
+Proverbs 31:25
+Proverbs 6:6
+Proverbs 6:9
+Proverbs 6:10
+Proverbs 6:11
+Proverbs 10:9
+Proverbs 15:13
+Proverbs 15:22
+Proverbs 20:29
+Matthew 5:14
+Matthew 5:16
+Matthew 6:33
+Matthew 6:34
+Matthew 7:7
+Matthew 11:28
+Matthew 11:29
+Matthew 11:30
+Matthew 17:20
+Matthew 19:26
+Matthew 28:20
+Mark 6:31
+Mark 9:23
+Mark 10:27
+Mark 11:24
+Luke 1:37
+Luke 1:45
+Luke 6:38
+Luke 12:25
+Luke 16:10
+Luke 18:27
+John 1:5
+John 10:10
+John 14:1
+John 14:27
+John 15:5
+John 16:33
+Acts 1:8
+Acts 20:24
+Acts 20:35
+Romans 4:20
+Romans 4:21
+Romans 6:4
+Romans 8:18
+Romans 8:26
+Romans 8:38
+Romans 8:39
+Romans 10:17
+Romans 12:10
+Romans 12:11
+Romans 13:12
+Romans 14:19
+Romans 15:4
+Romans 15:5
+1 Corinthians 6:19
+1 Corinthians 6:20
+1 Corinthians 10:13
+1 Corinthians 10:31
+1 Corinthians 15:57
+1 Corinthians 15:58
+1 Corinthians 16:13
+1 Corinthians 16:14
+2 Corinthians 4:8
+2 Corinthians 4:9
+2 Corinthians 4:16
+2 Corinthians 4:17
+2 Corinthians 4:18
+2 Corinthians 5:7
+2 Corinthians 5:17
+2 Corinthians 9:8
+2 Corinthians 12:9
+2 Corinthians 12:10
+Galatians 2:20
+Galatians 5:1
+Galatians 5:22
+Galatians 5:23
+Galatians 6:2
+Galatians 6:10
+Ephesians 2:10
+Ephesians 3:20
+Ephesians 4:2
+Ephesians 4:23
+Ephesians 4:24
+Ephesians 6:10
+Ephesians 6:11
+Ephesians 6:13
+Philippians 1:6
+Philippians 2:13
+Philippians 3:12
+Philippians 3:13
+Philippians 3:14
+Philippians 4:4
+Philippians 4:6
+Philippians 4:7
+Philippians 4:8
+Philippians 4:9
+Philippians 4:11
+Philippians 4:12
+Philippians 4:19
+Colossians 2:7
+Colossians 3:2
+Colossians 3:12
+Colossians 3:15
+Colossians 3:17
+Colossians 3:23
+Colossians 3:24
+1 Thessalonians 5:11
+1 Thessalonians 5:16
+1 Thessalonians 5:17
+1 Thessalonians 5:18
+1 Thessalonians 5:24
+2 Thessalonians 3:3
+2 Thessalonians 3:13
+2 Thessalonians 3:16
+1 Timothy 4:8
+1 Timothy 4:12
+1 Timothy 6:11
+1 Timothy 6:12
+2 Timothy 2:1
+2 Timothy 2:3
+2 Timothy 2:5
+2 Timothy 2:15
+2 Timothy 3:16
+2 Timothy 4:7
+2 Timothy 4:17
+Titus 2:7
+Hebrews 4:9
+Hebrews 4:10
+Hebrews 4:11
+Hebrews 4:16
+Hebrews 6:10
+Hebrews 6:11
+Hebrews 6:12
+Hebrews 6:19
+Hebrews 10:23
+Hebrews 10:24
+Hebrews 10:35
+Hebrews 10:36
+Hebrews 11:1
+Hebrews 11:6
+Hebrews 12:3
+Hebrews 12:12
+Hebrews 12:13
+Hebrews 13:5
+Hebrews 13:6
+Hebrews 13:8
+Hebrews 13:21
+James 1:5
+James 1:17
+James 1:22
+James 1:25
+James 4:7
+James 4:8
+James 4:10
+James 5:7
+James 5:8
+James 5:11
+James 5:16
+1 Peter 2:9
+1 Peter 4:10
+1 Peter 5:6
+1 Peter 5:7
+1 Peter 5:8
+1 Peter 5:10
+2 Peter 1:5
+2 Peter 1:6
+2 Peter 1:7
+2 Peter 3:9
+1 John 3:18
+1 John 4:4
+1 John 4:18
+1 John 5:4
+1 John 5:14
+3 John 1:2
+Jude 1:24
+Jude 1:25
+Revelation 2:10
+Revelation 3:8
+Revelation 3:11
+Revelation 21:4
+Revelation 21:5
+Revelation 22:13
