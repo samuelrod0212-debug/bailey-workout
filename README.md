@@ -6,7 +6,24 @@ Built with **Expo (React Native + TypeScript)**.
 
 > **Status: milestone 1.** The Home and Plan screens are built. Progress, Journal, the workout session and the finish screen come next, once the look is approved.
 
-## Run it
+## Install on iPhone
+
+The app is published with GitHub Pages as a home-screen web app, the same way as the Ironman app.
+
+1. On the iPhone, open **https://samuelrod0212-debug.github.io/bailey-workout/** in Safari.
+2. Tap the **Share** button, then **Add to Home Screen**, then **Add**.
+3. Open it from the home screen. It runs full screen, works offline, and keeps all data on the phone.
+
+### Publish an update
+
+```bash
+npm run build:pwa      # rebuilds docs/
+git add -A && git commit -m "Update app" && git push
+```
+
+GitHub Pages redeploys in a minute or two. The next time Bailey opens the app, it picks up the new version in the background, and she sees it on the following launch.
+
+## Run it for development
 
 You need Node 20+.
 
