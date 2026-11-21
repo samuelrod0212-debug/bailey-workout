@@ -4,7 +4,9 @@ A personal, single-user iPhone workout app. Dark mode only, no login, and all da
 
 Built with **Expo (React Native + TypeScript)**.
 
-> **Status: milestone 1.** The Home and Plan screens are built. Progress, Journal, the workout session and the finish screen come next, once the look is approved.
+Tabs: **Home** (today, calendar, verse) · **Plan** (weekly split, abs days) · **Half Marathon** (12-week plan + workout library) · **Progress** (weight + training stats) · **Journal** (history).
+
+Workouts are logged, not "started": tap **Log workout** on Home (or any day on Plan) to enter sets, runs and abs, then rate it and add a note.
 
 ## Install on iPhone
 
@@ -46,12 +48,13 @@ src/
     split.ts            weekly split: names, muscles, parts (e.g. Wed = Pull + Run Club), default abs days
     exercises.ts        ⚠️ PLACEHOLDER exercises, sets, reps, rest for each day
     absRoutines.ts      ⚠️ PLACEHOLDER abs circuits A / B / C
+    halfMarathon.ts     12-week half marathon plan, effort guide, workout library
     muscles.ts          muscle groups the body map can highlight
     verses.ts           GENERATED: 407 verses (WEB, public domain)
   lib/                  date helpers + schedule logic (status of each day, weekly stats, streak)
   storage/              on-device persistence (AsyncStorage) and app state
   components/           body map, rings, calendar, week strip, cards
-  screens/              Home, Plan (Progress and Journal are placeholders for now)
+  screens/              Home, Plan, Half Marathon, Progress, Journal, and the Log screen
 scripts/
   verse-references.txt  the list of verse references
   build-verses.mjs      turns that list into src/data/verses.ts
@@ -85,6 +88,10 @@ Runs (Run Club, Long Run) are in `RUNS` in the same file.
 ## Replace the abs routines
 
 Open `src/data/absRoutines.ts`. There are three circuits, used in order through the week: her first abs day of the week gets A, the second gets B, the third gets C. Use `reps` for rep moves or `holdSeconds` for planks and holds.
+
+## Edit the half marathon plan
+
+Open `src/data/halfMarathon.ts`. Each of the 12 weeks has an `easy`, `quality` (Wednesday Run Club) and `long` (Saturday) run with a title, miles, how-to and effort. Race day is Saturday of week 12. In the app, Bailey taps **Start plan** (week 1 begins the coming Monday), and can move race day a week at a time, pick her easy-run day, and enter a goal time to see target paces. The workout library is at the bottom of the same file.
 
 ## Add or change verses
 

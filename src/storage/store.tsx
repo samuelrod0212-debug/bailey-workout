@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { AppState as RNAppState, Platform } from 'react-native';
-import { AppState } from './types';
+import { AppState, DayLog, HalfMarathonState } from './types';
 import { freshState, loadState, saveState } from './persist';
 import { demoState } from './demo';
 import { addDays, isoWeekday, startOfDay, toKey, weekKey } from '../lib/dates';
@@ -14,6 +14,13 @@ type Ctx = {
   toggleAbs: (date: Date) => 'added' | 'removed' | 'full';
   toggleFavorite: (ref: string) => void;
   setPartDone: (date: Date, partId: string, done: boolean) => void;
+  /** Change one day's log. Ignored for future days. */
+  updateDay: (date: Date, fn: (log: DayLog) => DayLog) => void;
+  updateHM: (patch: Partial<HalfMarathonState>) => void;
+  logWeight: (date: Date, lb: number) => void;
+  removeWeighIn: (dateKey: string) => void;
+  setGoalWeight: (lb?: number) => void;
+  setUnit: (u: 'lb' | 'kg') => void;
 };
 const AppCtx = createContext<Ctx>(null as any);
 
@@ -68,6 +75,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         return { ...s, logs: { ...s.logs, [k]: { ...log, parts: { ...log.parts, [partId]: { done, at: Date.now() } } } } };
       });
     },
+    updateDay: (date, fn) => {
+      if (toKey(date) > toKey(today)) return;
+      const k = toKey(date);
+      setState(s => ({ ...s, logs: { ...s.logs, [k]: fn(s.logs[k] ?? { parts: {} }) } }));
+    },
+    updateHM: (patch) => setState(s => ({ ...s, hm: { ...s.hm, ...patch } })),
+    logWeight: (date, lb) => {
+      const wk = weekKey(date);
+      setState(s => ({
+        ...s,
+        weighIns: [...s.weighIns.filter(w => weekKey(new Date(w.date + 'T12:00')) !== wk), { date: toKey(date), lb: Math.round(lb * 10) / 10 }]
+          .sort((a, b) => a.date.localeCompare(b.date)),
+      }));
+    },
+    removeWeighIn: (k) => setState(s => ({ ...s, weighIns: s.weighIns.filter(w => w.date !== k) })),
+    setGoalWeight: (lb) => setState(s => ({ ...s, goalWeightLb: lb })),
+    setUnit: (u) => setState(s => ({ ...s, unit: u })),
   }), [ready, state, today]);
 
   return <AppCtx.Provider value={value}>{children}</AppCtx.Provider>;

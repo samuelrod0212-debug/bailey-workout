@@ -13,7 +13,7 @@ import { MonthCalendar } from '../components/MonthCalendar';
 import { TodayCard } from '../components/TodayCard';
 import { VerseCard } from '../components/VerseCard';
 
-export function HomeScreen({ onStart }: { onStart: (d: Date) => void }) {
+export function HomeScreen({ onLog }: { onLog: (d: Date) => void }) {
   const insets = useSafeAreaInsets();
   const { state, today } = useApp();
   const [selected, setSelected] = useState(today);
@@ -50,7 +50,7 @@ export function HomeScreen({ onStart }: { onStart: (d: Date) => void }) {
         <SectionLabel right={<Text style={[type.small, { fontSize: 13 }]}>{left > 0 ? `${left} of ${w.workoutsGoal} left` : 'Week complete'}</Text>}>My Day</SectionLabel>
         <WeekStrip selected={inThisWeek ? selected : today} onSelect={setSelected} />
         <View style={{ height: 16 }} />
-        <TodayCard date={selected} onStart={onStart} />
+        <TodayCard date={selected} onLog={onLog} />
       </Card>
 
       <Card style={{ padding: 14 }}>

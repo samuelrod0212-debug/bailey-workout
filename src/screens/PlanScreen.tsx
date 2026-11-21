@@ -26,7 +26,7 @@ function StatusBadge({ status, partsDone, partsTotal }: { status: DayStatus; par
   );
 }
 
-export function PlanScreen() {
+export function PlanScreen({ onLog }: { onLog: (d: Date) => void }) {
   const insets = useSafeAreaInsets();
   const { state, today, toggleAbs } = useApp();
   const toast = useToast();
@@ -97,8 +97,10 @@ export function PlanScreen() {
         const log = state.logs[toKey(d)];
         const partsDone = split.parts.filter(p => log?.parts[p.id]?.done).length;
         const aDone = absDone(state, d);
+        const runParts = plan.parts.filter(p => p.kind !== 'abs');
         return (
-          <Card key={toKey(d)} style={{ padding: 16, borderWidth: isToday ? 1.5 : 0, borderColor: colors.accent, opacity: rest ? 0.92 : 1 }}>
+          <Pressable key={toKey(d)} onPress={() => (toKey(d) <= toKey(today) && (!rest || plan.hasAbs) ? onLog(d) : undefined)}>
+          <Card style={{ padding: 16, borderWidth: isToday ? 1.5 : 0, borderColor: colors.accent, opacity: rest ? 0.92 : 1 }}>
             <View style={{ flexDirection: 'row', gap: 14 }}>
               <View style={{ flex: 1 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
@@ -126,16 +128,16 @@ export function PlanScreen() {
               </View>
             </View>
 
-            {split.parts.length > 1 ? (
+            {runParts.length > 1 || runParts.some(p => p.hm) ? (
               <View style={{ marginTop: 12, gap: 6 }}>
-                {split.parts.map(p => {
+                {runParts.map(p => {
                   const done = !!log?.parts[p.id]?.done;
                   return (
                     <View key={p.id} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 8 }}>
                       <Ionicons name={done ? 'checkmark-circle' : 'ellipse-outline'} size={18} color={done ? colors.accent : colors.textFaint} style={{ marginTop: 1 }} />
                       <View style={{ flex: 1 }}>
                         <Text style={[type.body, { fontSize: 14 }]}>{p.title}</Text>
-                        {p.note ? <Text style={[type.small, { fontSize: 12, marginTop: 1 }]}>{p.note}</Text> : null}
+                        {p.note || p.hm ? <Text style={[type.small, { fontSize: 12, marginTop: 1 }]}>{p.hm ? `Half marathon plan · effort ${p.hm.effort}` : p.note}</Text> : null}
                       </View>
                     </View>
                   );
@@ -158,6 +160,7 @@ export function PlanScreen() {
               {rest ? <Text style={[type.small, { fontSize: 12 }]}>Recovery</Text> : mainDone(state, d) ? <Text style={[type.small, { fontSize: 12, color: colors.accent }]}>Completed</Text> : null}
             </View>
           </Card>
+          </Pressable>
         );
       })}
     </ScrollView>
