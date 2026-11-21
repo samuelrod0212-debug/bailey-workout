@@ -151,7 +151,7 @@ export function PlanScreen() {
               })}>
                 <Ionicons name={aDone ? 'checkmark-circle' : plan.hasAbs ? 'flash' : 'add'} size={16} color={plan.hasAbs ? colors.abs : colors.textDim} />
                 <Text style={[type.small, { color: plan.hasAbs ? colors.abs : colors.textDim, fontWeight: '700' }]}>
-                  {plan.hasAbs ? `${plan.absRoutine?.name ?? 'Abs'} · ${plan.absRoutine?.focus.split(' +')[0]}` : 'Add Abs'}
+                  {plan.hasAbs ? 'Abs' : 'Add Abs'}
                 </Text>
                 {plan.hasAbs && !aDone ? <Ionicons name="close" size={14} color={colors.abs} style={{ marginLeft: 2, opacity: 0.7 }} /> : null}
               </Pressable>
